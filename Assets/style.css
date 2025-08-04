@@ -6,9 +6,9 @@
 }
 
 html {
-  font-family: "vazirmatn", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 16px; /* Base font size */
   background-color: #fdfdfd;
   color: #222;
   direction: auto;
@@ -96,17 +96,90 @@ footer {
   color: #666;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  body {
-    margin: 1rem;
-    padding: 1rem;
-  }
-}
-
 .border {
   border-bottom: 1px solid #ddd;
   padding: 0.2rem;
   border-radius: 6px;
   margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Tablet and smaller screens */
+  html {
+    font-size: 14px; /* Slightly smaller base font for tablets */
+  }
+
+  body {
+    margin: 1rem;
+    padding: 0.75rem;
+    max-width: 100%; /* Allow body to take full width */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Slightly smaller heading */
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin-left: 0.5rem; /* Reduce left margin for paragraphs */
+    margin-right: 0.5rem; /* Add right margin for balance */
+  }
+
+  footer {
+    font-size: 0.85rem; /* Smaller footer text */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile screens */
+  html {
+    font-size: 12px; /* Smaller base font for mobile */
+  }
+
+  body {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none; /* Remove border for minimal look on mobile */
+    box-shadow: none; /* Remove shadow for cleaner look */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller h1 for mobile */
+    margin-top: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    margin-left: 0; /* Remove left margin for full-width text */
+    margin-right: 0;
+    text-align: right; /* Switch to right-aligned for better readability in Persian */
+    line-height: 1.8; /* Increase line height for readability */
+  }
+
+  .border {
+    padding: 0.1rem;
+    margin-bottom: 0.5rem; /* Less margin for compact layout */
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+  }
 }
