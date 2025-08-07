@@ -141,7 +141,7 @@ footer {
 @media (max-width: 480px) {
   /* Mobile screens */
   html {
-    font-size: 12px; /* Smaller base font for mobile */
+    font-size: 14px; /* Smaller base font for mobile */
   }
 
   body {
